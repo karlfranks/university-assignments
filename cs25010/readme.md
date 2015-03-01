@@ -4,4 +4,4 @@ For this assignment the brief was to create a music store website written in PHP
 
 I was also required to store data in a session, to store data across pages and allow for a login system.
 
-A live version can be found here: http://user.aber.ac.uk/kpf/cs25010/
+A live version can be found here: http://users.aber.ac.uk/kpf/cs25010/
