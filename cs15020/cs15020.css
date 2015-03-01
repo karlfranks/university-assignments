@@ -1,0 +1,91 @@
+/* Sets the default font for the pages */
+body {
+	font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/*This ID used for the banner at the top of pages*/
+#banner {
+	background-image: url(banner.png);
+	height: 2em;
+	width: 100%;
+	text-align: center;
+	color: #4D4B4D;
+	font-size: 24pt;
+	position: fixed;
+	font-family: Arial, sans-serif;
+	padding-top: 1em;
+}
+
+/* This ID used for the menu at the side */
+#menu {
+	position: fixed;
+	float: left;
+	width: 7em;
+	text-align: left;
+	padding-top: 1em;
+	background-color: #C6FFFF;
+	text-decoration: none;
+	margin-top: 5em;
+	padding-left: 1em;
+	font-size: 14pt;
+}
+
+/* This ID is used for the header of the CV page */
+#cvheader {
+	font-size: 12pt;
+	text-align: center;
+}
+
+/* This ID used for the main body of text on pages */
+#textbody {
+	margin-left: 11em;
+	padding-top: 7em;
+	margin-right: 1em;
+	font-size: 12pt;
+}
+
+/* This ID used for the "last modified" footer on pages */
+#footer {
+	bottom: 0;
+	margin-left: 11em;
+	margin-right: 1em;
+	text-align: center;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* Used so there is no border around the table - makes it look nicer */
+tr {
+	border: 0px;
+}
+
+p.center{
+	text-align: center;
+}
+
+ul, table {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top:0;
+	padding-bottom:0;
+}
+
+/* These are just to customise the hyperlinks */
+a:link {
+	color: #CC3366;
+	text-decoration: none;
+}
+a:visited {
+	color: #B5194D;
+	text-decoration: none;
+}
+a:hover {
+	color: #CC3366;
+	text-decoration: underline;
+}
+a:active {
+	color: #CC3366;
+	text-decoration: underline;
+}

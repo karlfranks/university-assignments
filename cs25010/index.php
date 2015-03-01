@@ -1,0 +1,46 @@
+<?php include("session.php"); ?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>karlTunes</title>
+    <link href="cs25010.css" type="text/css" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="favicon.png">
+  </head>
+  <body>
+
+
+    <?php
+      if (!$gotusername)
+      {
+        include("login.php");
+      }
+      else {
+        echo'<form action="index.php" method="post">';
+        include("menu.php");
+        echo"</form>";
+
+
+        echo"<div id='content'>";
+
+        echo"<form action='sorted.php' method='post'>Show tracks
+        <select name='compare'>
+        <option value='greater'>greater than</option>
+        <option value='lesser'>less than</option>
+        </select>
+        &#163;
+        <input type='text' name='sort_price' />
+        <input type='submit' name='price' value='Submit' /></form>";
+
+
+        echo'<form action="basket.php" method="post">';
+        echo "<button type='submit' name='additems'>
+        Add Items To Basket</button>";
+        include("print_all.php");
+        echo "</form>";
+        echo "<p><a href='index.txt'>View Source</a></p>";
+        echo "<p><a href='source.php'>All Source Files</a></p>";
+        echo "</div>";
+      }
+    ?>
+  </body>
+</html>

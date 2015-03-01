@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>CS15020 Homepage</title>
+	<meta charset="utf-8">
+	<link href="cs15020.css" type="text/css" rel="stylesheet"/>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<script>
+		<!--
+		//checks if the user has put a value in the text box or not
+		function check_input()
+		{
+			user_name = document.forms[0].name_input.value;
+			
+			if (user_name == "")
+			{
+				alert("You did not enter your name");
+			}
+			else
+			{
+				display_message();
+			}
+		}
+		
+		//displays a different message based on time
+		function display_message() {
+			current_time = new Date();
+			current_hour = current_time.getHours();
+			user_name = document.forms[0].name_input.value;
+			
+			if (current_hour >= 18)
+			{
+				alert("Good evening, " + user_name);
+			}
+			else if (current_hour >= 12)
+			{
+				alert("Good afternoon, " + user_name);
+			}
+			else if (current_hour >= 6)
+			{
+				alert("Good morning, " + user_name);
+			}
+			else
+			{
+				alert("Go to sleep, " + user_name);
+			}
+
+			
+		}
+		-->
+	</script>
+</head>
+<body>
+	<!-- The banner at the top -->
+	<div id="banner">
+		Karl Franks CS15020 Assignment 2
+	</div>
+	
+	<!-- The menu at the side -->
+	<div id="menu">
+		<p><a href="index.html">Home</a></p>
+		<p><a href="cv.html">CV</a></p>
+		<p><a href="/kpf/wordpress/">Wordpress</a></p>
+		<p><a href="/kpf/webshop/catalog/">Webshop</a></p>
+		<p><a href="about.html">About</a></p>
+		<!-- HTML and CSS validate buttons -->
+		<p>
+			<a href="http://validator.w3.org/check?uri=referer"><img src="html5.png" alt="Valid HTML5!" height="15" width="80" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="css.gif" alt="Valid CSS!" height="15" width="80" /></a>
+		</p>
+	</div>
+	
+	<!-- The main body of the homepage -->
+	<div id="textbody">
+		<p>Welcome to the homepage for Karl Franks's second CS15020 Assignment.</p>
+		<p>Declaration of originality: I declare that the contents of this site are entirely my own.</p>
+		<p>Disclaimer: The information provided on this and other pages by me, Karl Franks (<a href="mailto:kpf@aber.ac.uk">kpf@aber.ac.uk</a>), is
+		under my own personal responsibility and not that of Aberystwyth University. Similarly,
+		any opinions expressed are my own and are in no way to be taken as those of A.U.</p>
+		
+		<!-- Creates the text box and button needed to input name -->
+		<form action="">
+			Enter your name:
+			<br>
+			<input type="text" name="name_input" size="12"/>
+			<input type="button" name="submit" onclick="check_input()" value="Submit"/>
+		</form>
+		
+	</div>
+	
+	<!-- The footer containing the last modified date and time -->
+	<div id="footer">
+		<script type="text/javascript">
+			var date = new Date(document.lastModified);
+			var month = date.getMonth() + 1;
+			document.write("Last modified: " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + (date.getDate()) + "/" + month + "/" + (date.getFullYear()));
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>About</title>
+	<meta charset="utf-8">
+	<link href="cs15020.css" type="text/css" rel="stylesheet"/>
+	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+	<!-- The banner at the top -->
+	<div id="banner">
+		Karl Franks CS15020 Assignment 2
+	</div>
+	
+	<!-- The menu at the side -->
+	<div id="menu">
+		<p><a href="index.html">Home</a></p>
+		<p><a href="cv.html">CV</a></p>
+		<p><a href="/kpf/wordpress/">Wordpress</a></p>
+		<p><a href="/kpf/webshop/catalog/">Webshop</a></p>
+		<p><a href="about.html">About</a></p>
+		<!-- HTML and CSS validate buttons -->
+		<p>
+			<a href="http://validator.w3.org/check?uri=referer"><img src="html5.png" alt="Valid HTML5!" height="15" width="80" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="css.gif" alt="Valid CSS!" height="15" width="80" /></a>
+		</p>
+	</div>
+	
+	<div id="textbody">
+		Overall I feel my site functions as specified, however there have been some compromises I have made in writing it.
+		For example, as you will notice there are many &lt;br&gt; tags used to create line breaks, these are because I started
+		writing the CV with &lt;p&gt; tags for each section but you are not supposed to put block level elements within &lt;p&gt;
+		e.g. &lt;ul&gt; or &lt;table&gt;. I made this mistake initially since most browsers seem to interpret it as I thought I should write it, 
+		but the W3C Validator does not. Realising my mistake I decided to take the compromise of many &lt;br&gt; tags, and since I know now 
+		this I will not use this method in future websites I will write but for this assignment chose a compromise over finding a
+		different tag to use or changing the format.
+		<br />
+		<br />
+		I considered using Server Side Includes for code that was the same across different pages like the banner and the menu, but I 
+		decided this would be too much of a hassle for a very simple website with three pages, but it is definitely something I will 
+		consider using in future.
+		<br />
+		<br />
+		In testing I have found the browsers I have tested on all put a small margin at the top and left of the page, which I
+		attempted to not display using CSS but failed and as such it is still in there (and most noticeable when you scroll
+		on the CV page). Much like the &lt;p&gt; problem I have left this in as a compromise as it is not that noticeable and very
+		few people will see this, and by the time I write another website I will mostly likely realise how to fix it.
+		I attempted to cover it up with a border but this still left the gap then the border below.
+		<br />
+		<br />
+		I have tested my site using Chrome (version 33 on Windows 7, version 28 on Linux Mint 15),  Internet Explorer 11 (on Windows 7), Firefox
+		(version 28 on Windows 7, version 22 on Linux Mint 15) and all of these display my site perfectly and the JavaScript functions as expected, 			although in testing it became obvious to me just the small variations in ways browsers interpret certain tags or CSS values (eg different
+		style buttons).
+		<br />
+		<br />
+		There is a very slight overlap of about 2 pixels where the menu is overlapping the banner, this came about while I was
+		writing the CSS and during an earlier version there was no overlap but I believe when I started changing the padding on
+		some elements this overlap then occurred.
+		<br />
+		<br />
+		All of my code is my own, I took some inspiration in the design/layout of the site from <a href="http://users.aber.ac.uk/ais/examples/css/asmt2/">this example page</a> Adrian Shaw
+		created but wrote all of the code myself.
+		<br />
+		<br />
+		I feel I have done quite well on this assignment considering my very limited prior HTML and CSS knowledge from A Level Computing
+		and hope my work reflects this. I also feel the design of my pages is perhaps maybe a bit too simple, but is quite aesthetically
+		pleasing. (Also as a point of interest I used the same link colour I use on my twitter profile and the banner image is cropped
+		from the same picture I used as my banner picture on twitter. This was so I could take the CSS I wrote for this then reuse some of it
+		to create a website with the same styling as my other presence across the web)
+		<br />
+		<br />
+	</div>
+	
+	<!-- The footer containing the last modified date and time -->
+	<div id="footer">
+		<script type="text/javascript">
+			var date = new Date(document.lastModified);
+			var month = date.getMonth() + 1;
+			document.write("Last modified: " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + (date.getDate()) + "/" + month + "/" + (date.getFullYear()));
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Sets the default font for the pages */
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+a:link {
+  color: #007B7D;
+  text-decoration: none;
+}
+a:visited {
+  color: #007B7D;
+  text-decoration: none;
+}
+a:hover {
+  color: #007B7D;
+  text-decoration: underline;
+}
+a:active {
+  color: #007B7D;
+  text-decoration: underline;
+}
+
+tr {
+  border: 0px;
+}
+
+/* Container is necessary because td cannot be positioned relative */
+td a:link {
+  color: #000000;
+  text-decoration: none;
+}
+td .tooltipcontainer {
+  position: relative;
+  color: #000000;
+}
+td .tooltip {
+  display: none;
+  position: absolute;
+  background-color: #E68EAB;
+  border-color: #000000;
+  border:1px;
+}
+
+td a:hover .tooltip {
+  display: block;
+}
+
+
+
+/*This ID used for the banner at the top of pages*/
+#banner {
+  background-color: #C9F2F2;
+  height: 5.5em;
+  width: 100%;
+  text-align: center;
+  color: #4D4B4D;
+  font-size: 12pt;
+  position: fixed;
+  font-family: Arial, sans-serif;
+  padding-top: 0em;
+  line-height: 0%;
+  top: 0;
+  left:0;
+}
+
+
+#content{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top:6em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+p.center{
+  text-align: center;
+}
+
+
+ul, table {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+table.index {
+  padding-bottom:6em;
+}
+
+table.menu{
+  margin-left: auto;
+  margin-right: auto;
+  align:center;
+  
+}
+
+h1.center {
+  text-align: center;
+}
+
+input.center {
+  font-size: 20pt;
+  margin-left: auto;
+  margin-right: auto;
+
+}
